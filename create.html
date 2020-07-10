@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> REGISTER </title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+</head>
+<body>
+
+    <br>
+    <nav class="navbar is-transparent is-hoverable" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        
+            
+        <div class="navbar-menu" id="navbarBasicExample">
+            <div class="navbar-start">
+                
+                <a href="index.html" class="navbar-item" id="icon">
+                    <span class="icon has-text-link">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </span>     
+                </a>
+                <a class="navbar-item" style="color: black; font-size: 30px;" href="index.html">
+                    Birdapp
+                </a>
+               
+                <a href="" class="navbar-item">
+                    Features
+                </a>
+
+                <a href="" class="navbar-item">
+                    Help
+                </a>
+
+                <a href="" class="navbar-item">
+                   Purchase 
+                </a>
+                
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a id="buttonone" class="button is-link" href="">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav> <br>
+
+    <div class="field">
+        <div class="columns">
+            <div class="column"></div>
+            <div class="column">
+                <nav class="panel is-link">
+                    <p class="panel-heading">
+                        Create an account
+                    </p>
+        
+                    <div class="box" id="boxx">
+                        <div class="form">
+                            <form action="connect.php" method="POST">
+                                <label for="fullname"> FULL NAME  </label><br>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input type="text" class="input" name="fullname" id="fullname" placeholder="John Bill" required><br><br>
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                    </div>
+                        
+                                <label for="user_name"> USERNAME</label><br>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input type="text" class="input is-link" name="user_name" id="user_name" placeholder="e.g john21" required><br><br>
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                    </div>
+
+                                <label for="gender"> GENDER </label><br>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <div class="select" id="gender" name="gender">
+                                            <select class="select">
+                                                <option selected>--GENDER--</option>
+                                                <option value="f"> FEMALE </option>
+                                                <option value="m"> MALE </option>
+                                            </select>
+                                        </div>
+                                        <span class="icon is-left">
+                                            <i class="fas fa-female"></i>&nbsp;
+                                            <i class="fas fa-male"></i>
+                                        </span>
+                                    </div><br>
+
+                                <label for="pwd"> PASSWORD </label>
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input type="password" class="input is-link" name="pwd" id="pwd" placeholder="create a password" required><br><br>
+                                            <span class="icon is-small is-left">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                    </div>
+
+                                <label for="con_pwd">RE-ENTER PASSWORD </label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input type="password" class="input is-link" name="con_pwd" id="con_pwd" placeholder="confirm password" required><br><br>
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                </div>
+
+                                
+                                <div class="control has-icons-left has-icons-right">
+                                    <button class="button is-pulled-right is-link" type="submit" id="submitbtn" name="submitbtn"> ENTER &nbsp;&nbsp;&nbsp;</button>
+                                        <span class="icon is-small is-right">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </span>
+                                </div>
+                    
+                            </form>
+                        </div> 
+                    </div>
+                </nav>
+
+            </div>
+            <div class="column"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+</body>
+</html>
