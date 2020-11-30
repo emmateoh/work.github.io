@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
 
@@ -23,7 +24,7 @@
         </div>
         
             
-        <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-menu" id="navbarBasicExample" >
             <div class="navbar-start">
                 
                 <a href="index.html" class="navbar-item" id="icon">
@@ -32,7 +33,7 @@
                     </span>     
                 </a>
                 <a class="navbar-item" style="color: black; font-size: 30px;" href="index.html">
-                    Birdapp
+                    BirdNote
                 </a>
                
                 <a href="" class="navbar-item">
@@ -63,7 +64,7 @@
             <div class="column"></div>
             <div class="column">
                 <nav class="panel is-link">
-                    <p class="panel-heading">
+                    <p class="panel-heading animate__animated animate__bounce">
                         Login now!
                     </p>
         
@@ -91,7 +92,7 @@
                                     </div>
 
                                 <div class="control has-icons-left has-icons-right">
-                                    <a class="button is-pulled-right is-link" type="submit" id="submitbtn" name="submitbtn">  LOGIN &nbsp;&nbsp;&nbsp;</a>
+                                    <a class="button animate__animated animate__fadeInLeft is-pulled-right is-link" type="submit" id="submitbtn" name="submitbtn">  LOGIN &nbsp;&nbsp;&nbsp;</a>
                                         <span class="icon is-small is-right">
                                             <i class="fas fa-paper-plane"></i>
                                         </span>
@@ -108,5 +109,32 @@
     </div>
 
     <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+                });
+            });
+            }
+
+            });
+    </script>
 </body>
 </html>
